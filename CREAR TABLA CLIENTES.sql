@@ -14,13 +14,21 @@ USE empresa;
     
 COMMENT = 'En esta tabla guardaremos los clientes';
 
-/*ELIMINAR CLAVE PRIMARIA*/
+/*ELIMINAR CLAVE PRIMARIA
+
+ALTER TABLE clientes
+MODIFY identificador INT(10) NOT NULL;
 
 ALTER TABLE clientes
 DROP PRIMARY KEY;
+*/
 
-/*AÑADIR CLAVE PRIMARIA*/ 
+/*AÑADIR CLAVE PRIMARIA DE NUEVO
+
+ALTER TABLE clientes
+MODIFY identificador INT(10) NOT_NULL AUTO_INCREMENT;
 
 ALTER TABLE clientes
 ADD PRIMARY KEY (identificador);
         
+*/ 
