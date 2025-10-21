@@ -27,8 +27,6 @@ DROP PRIMARY KEY;
 
 ALTER TABLE clientes
 MODIFY identificador INT(10) NOT_NULL AUTO_INCREMENT;
-
-ALTER TABLE clientes
 ADD PRIMARY KEY (identificador);
         
 */ 
